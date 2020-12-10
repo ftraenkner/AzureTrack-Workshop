@@ -9,5 +9,4 @@ namespace RMotownFestival.Api.Domain
         public string ImagePath { get; set; }
         public Uri Website { get; set; }
     }
-
 }

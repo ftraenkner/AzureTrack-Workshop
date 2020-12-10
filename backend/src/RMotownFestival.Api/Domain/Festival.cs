@@ -1,19 +1,15 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace RMotownFestival.Api.Domain
 {
     public class Festival
     {
-        public Schedule LineUp { get; set; }
-        public IEnumerable<Artist> Artists { get; set; }
-        public IEnumerable<Stage> Stages { get; set; }
+        public int Id { get; set; }
 
-        public Festival()
-        {
-            LineUp = new Schedule();
-            Artists = Enumerable.Empty<Artist>();
-            Stages = Enumerable.Empty<Stage>();
-        }
+        public int LineUpId { get; set; }
+        public Schedule LineUp { get; set; }
+
+        public List<Artist> Artists { get; set; }
+        public List<Stage> Stages { get; set; }
     }
 }

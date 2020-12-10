@@ -4,11 +4,8 @@ namespace RMotownFestival.Api.Domain
 {
     public class Schedule
     {
-        public List<ScheduleItem> Items { get; set; }
+        public int Id { get; set; }
 
-        public Schedule()
-        {
-            Items = new List<ScheduleItem>();
-        }
+        public List<ScheduleItem> Items { get; set; }
     }
 }
